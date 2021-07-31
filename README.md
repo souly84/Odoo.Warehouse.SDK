@@ -1,1 +1,1 @@
-# InventoryOperations.SDK
+# Inventory.SDK
