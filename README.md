@@ -1,5 +1,5 @@
 # Inventory.SDK
 
-The repository comtains domain entities and contarct for Warehouse Inventory business area
+The repository comtains Warehouse domain entities implementation as [Oddo plugin](https://github.com/patricoos/PortaCapena.OdooJsonRpcClient).
 
-https://github.com/patricoos/PortaCapena.OdooJsonRpcClient
+
