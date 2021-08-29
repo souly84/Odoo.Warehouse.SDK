@@ -8,6 +8,6 @@
     <None Remove="Warehouse.Core" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Warehouse.Core" Version="1.0.0.43" />
+    <PackageReference Include="Warehouse.Core" Version="1.0.0.54" />
   </ItemGroup>
 </Project>
