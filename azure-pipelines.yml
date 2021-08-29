@@ -63,9 +63,9 @@ steps:
     pollingTimeoutSec: '300'
 
 - task: MSBuild@1
-  displayName: 'NuGet pack Inventory.SDK'
+  displayName: 'NuGet pack Odoo.Warehouse.SDK'
   inputs:
-    solution: src/Inventory.SDK.csproj
+    solution: src/Odoo.Warehouse.SDK.csproj
     configuration: '$(buildConfiguration)'
     msbuildArguments: '/p:PackageVersion=$(Build.BuildNumber) /t:pack /p:packageOutputPath=$(Build.ArtifactStagingDirectory) /p:IncludeReferencedProjects=true'
 
