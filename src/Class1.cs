@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inventory.SDK
+namespace Odoo.Warehouse.SDK
 {
     public class Class1
     {

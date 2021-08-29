@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Inventory.SDK.Tests
+namespace Odoo.Warehouse.SDK.Tests
 {
     public class Tests
     {

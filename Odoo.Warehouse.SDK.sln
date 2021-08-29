@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odoo.Warehouse.SDK", "src\Odoo.Warehouse.SDK.csproj", "{BF9CD29D-3794-423E-9CFA-19FBD0019BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odoo.Warehouse.SDK.UnitTests", "tests\Odoo.Warehouse.SDK.UnitTests.csproj", "{9C5C5A55-58D6-42F9-BF82-EB6DB6790E95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF9CD29D-3794-423E-9CFA-19FBD0019BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9CD29D-3794-423E-9CFA-19FBD0019BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9CD29D-3794-423E-9CFA-19FBD0019BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9CD29D-3794-423E-9CFA-19FBD0019BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5C5A55-58D6-42F9-BF82-EB6DB6790E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5C5A55-58D6-42F9-BF82-EB6DB6790E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5C5A55-58D6-42F9-BF82-EB6DB6790E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5C5A55-58D6-42F9-BF82-EB6DB6790E95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2038A63-E6A4-44D2-9530-779962487E03}
+	EndGlobalSection
+EndGlobal
