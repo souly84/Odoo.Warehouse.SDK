@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Configuration;
+using System.Linq;
 using System.Threading.Tasks;
 using Odoo.Warehouse.SDK.Extensions;
 using PortaCapena.OdooJsonRpcClient;
@@ -10,10 +11,10 @@ namespace Odoo.Warehouse.SDK.Tests
 {
     public class OdooCompanyTests
     {
-        private static string _odooCompanyUri = "https://testreception1.odoo.com";
-        private static string _odooDb = "testreception1";
-        private string _userName = "zhukovskydenis@gmail.com";
-        private string _userPassword = "fuqNu1-tywhaq-gubwig";
+        private static string _odooCompanyUri = ConfigurationManager.AppSettings["companyUri"];
+        private static string _odooDb = ConfigurationManager.AppSettings["database"];
+        private string _userName = ConfigurationManager.AppSettings["userLogin"];
+        private string _userPassword = ConfigurationManager.AppSettings["password"];
         private OdooCompany _odooCompany = new OdooCompany(
             _odooCompanyUri,
             _odooDb
