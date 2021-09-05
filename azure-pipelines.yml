@@ -31,9 +31,10 @@ steps:
 - task: FileTransform@2
   displayName: 'File transformation: app.config'
   inputs:
-    folderPath: '$(Build.SourcesDirectory)'
+    folderPath: '$(Build.SourcesDirectory)\tests\'
     targetFiles: '**/app.config'
     fileType: xml
+    failOnStderr: true
 
 - task: NuGetToolInstaller@1
 - task: NuGetCommand@2
