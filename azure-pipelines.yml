@@ -31,7 +31,7 @@ steps:
 - task: FileTransform@2
   displayName: 'File transformation: app.config'
   inputs:
-    folderPath: '$(Build.SourcesDirectory)\tests\'
+    folderPath: '$(Build.DefaultWorkingDirectory)'
     targetFiles: '**/app.config'
     fileType: xml
     failOnStderr: true
