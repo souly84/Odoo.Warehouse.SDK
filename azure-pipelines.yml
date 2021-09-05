@@ -32,7 +32,7 @@ steps:
   displayName: 'File transformation: app.config'
   inputs:
     folderPath: '$(Build.SourcesDirectory)'
-    targetFiles: '**/app.config'
+    targetFiles: '**\app.config'
     fileType: xml
     failOnStderr: true
 
