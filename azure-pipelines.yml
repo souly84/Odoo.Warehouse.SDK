@@ -28,13 +28,12 @@ name: $(releaseBuildNumber).$(Build.BuildId)
 
 steps:
 
-- task: FileTransform@2
-  displayName: 'File transformation: app.config'
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3
+  displayName: 'Replace tokens'
   inputs:
-    folderPath: '$(Build.SourcesDirectory)'
-    targetFiles: '**\app.config'
-    fileType: xml
-    failOnStderr: true
+    targetFiles: |
+      **/*.config
+      **/*.json => outputs/*.json
 
 - task: NuGetToolInstaller@1
 - task: NuGetCommand@2
