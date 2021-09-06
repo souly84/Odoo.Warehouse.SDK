@@ -10,16 +10,30 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-  releaseBuildNumber: '1.0.0'
-  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
-  isDevelop: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+- group: Odoo_Warehouse_SDK
+- name: isDevelop
+  value: $[eq(variables['Build.SourceBranch'], 'refs/heads/main')]
+- name: solution
+  value: '**/*.sln'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: buildConfiguration
+  value: 'Release'
+- name: releaseBuildNumber
+  value: '1.0.0'
+- name: outputDirectory
+  value: '$(build.binariesDirectory)/$(buildConfiguration)'
 
 name: $(releaseBuildNumber).$(Build.BuildId)
 
 steps:
+
+- task: qetza.replacetokens.replacetokens-task.replacetokens@3
+  displayName: 'Replace tokens'
+  inputs:
+    targetFiles: |
+      **/*.config
+      **/*.json => outputs/*.json
 
 - task: NuGetToolInstaller@1
 - task: NuGetCommand@2
